@@ -64,25 +64,30 @@ border-radius: 5px;
 .links a:hover {
 background-color: #0056b3;
 }
-.top-right-link {
+.top-right-links {
 position: absolute;
 top: 10px;
 right: 10px;
+display: flex;
+gap: 10px;
+}
+.top-right-links a {
 background-color: #007BFF;
 color: #fff;
 padding: 10px 15px;
 text-decoration: none;
 border-radius: 5px;
 }
-.top-right-link:hover {
+.top-right-links a:hover {
 background-color: #0056b3;
 }
 </style>
 </head>
 <body>
-<a href="education.html" class="top-right-link">Education</a>
-<a href="awards.html" class="top-right-link">Awards & Honors</a>
-<a href="research.html" class="top-right-link">Research</a>
+<div class="top-right-links">
+<a href="education.html">Education</a>
+<a href="awards.html">Awards & Honors</a>
+<a href="research.html">Research</a>
 </div>
 <div class="container">
 <h1>Welcome to My Personal Website!</h1>
