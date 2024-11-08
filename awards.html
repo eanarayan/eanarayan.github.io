@@ -3,21 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Awards & Honors</title>
+<title>Awards & Achievements</title>
 <style>
 body {
-font-family: Arial, sans-serif;
+font-family: 'Arial', sans-serif;
 line-height: 1.6;
 margin: 0;
-padding: 20px;
+padding: 0;
 background-color: #f4f4f4;
 }
 .container {
-max-width: 800px;
+max-width: 900px;
 margin: auto;
 background: #fff;
 padding: 20px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #007BFF;
+color: #fff;
+}
+header h1 {
+margin: 0;
+font-size: 1.5em;
+}
+nav {
+display: flex;
+gap: 15px;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+padding: 10px 15px;
+background-color: #0056b3;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+nav a:hover {
+background-color: #003f7f;
 }
 h1 {
 color: #333;
@@ -40,11 +67,28 @@ color: #333;
 li span {
 color: #666;
 }
+li a {
+color: #007BFF;
+text-decoration: none;
+}
+li a:hover {
+text-decoration: underline;
+}
 </style>
 </head>
 <body>
+<header>
+<h1>My Personal Website</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="education.html">Education</a>
+<a href="awards.html">Awards & Honors</a>
+<a href="research.html">Research</a>
+<a href="conferences.html">Conferences & Publications</a>
+</nav>
+</header>
 <div class="container">
-<h1>Awards & Honors</h1>
+<h1>Awards & Achievements</h1>
 <ul>
 <li>
 <strong><a href="https://graduation.unm.edu/spring_2024/program/awards:126" target="_blank">Graduate Distinction</strong>
