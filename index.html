@@ -1,119 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Easwar Anand Narayanan</title>
-<style>
-body {
-font-family: 'Arial', sans-serif;
-line-height: 1.6;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-}
-.container {
-max-width: 900px;
-margin: auto;
-background: #fff;
-padding: 20px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px;
-background-color: #007BFF;
-color: #fff;
-}
-header h1 {
-margin: 0;
-font-size: 1.5em;
-}
-nav {
-display: flex;
-gap: 15px;
-}
-nav a {
-color: #fff;
-text-decoration: none;
-padding: 10px 15px;
-background-color: #0056b3;
-border-radius: 5px;
-transition: background-color 0.3s;
-}
-nav a:hover {
-background-color: #003f7f;
-}
-.profile-pic {
-display: block;
-margin: 20px auto;
-border-radius: 50%;
-width: 150px;
-height: 150px;
-object-fit: cover;
-}
-.content {
-padding: 20px;
-}
-.contact {
-margin-top: 20px;
-padding: 10px;
-background-color: #e9ecef;
-border-radius: 5px;
-}
-.contact h2 {
-color: #333;
-}
-.contact p {
-color: #666;
-font-size: 1em;
-}
-.links {
-margin-top: 20px;
-text-align: center;
-}
-.links a {
-display: inline-block;
-margin: 10px;
-padding: 10px 20px;
-color: #fff;
-background-color: #007BFF;
-text-decoration: none;
-border-radius: 5px;
-}
-.links a:hover {
-background-color: #0056b3;
-}
-</style>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Personal website of Easwar Anand Narayanan, experimental particle physicist working on the ATLAS experiment, detector technology, and emerging technologies in higher education."
+  >
+
+  <title>Easwar Anand Narayanan</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<header>
-<h1>Easwar Anand Narayanan</h1>
-<nav>
-<a href="education.html">Education</a>
-<a href="awards.html">Awards & Honors</a>
-<a href="research.html">Research</a>
-<a href="conferences.html">Conferences & Publications</a>
-<a href="Easwar_Narayanan_CV_2024_Sept_2024.pdf" target="_blank">My CV</a>
-<a href="https://inspirehep.net/authors/2086334/" target="_blank">Inspire-HEP</a>
-<a href="https://www.linkedin.com/in/easwar-anand-narayanan-9a1a9624b" target="_blank">LinkedIn</a>
-</nav>
-</header>
-<div class="container">
-<img src="profile-pic.jpeg" alt="Profile Picture" class="profile-pic">
-<div class="content">
-<h1>Welcome to My Personal Website!</h1>
-<p>I am an experimental particle physicist currently working as a postdoctoral researcher at Southern Methodist University in Dallas. I work with the ATLAS experiment at the Large Hadron Collider (LHC) in Switzerland, where we explore fundamental questions about the universe using data collected by our detectors.</p>
-<p>My current research involves searching for a very rare process called di-Higgs production and developing advanced technology for the next-generation ATLAS detector, which will be used in future experiments at the LHC.</p>
-<p>I earned my PhD in physics from the University of New Mexico in Spring 2024, under the guidance of Prof. Sally Seidel. My dissertation focused on measuring the lifetime of a particle called the B-meson, studying certain properties of its decays, and developing new sensors for particle detectors.</p>
-<div class="links">
-</div>
-<div class="contact">
-<h2>Contact Details</h2>
-<p><strong>Official email:</strong> <a href="mailto:enarayanan@smu.edu">enarayanan@smu.edu</a></p>
-<p><strong>Personal email:</strong> <a href="mailto:n.easwaranand@gmail.com">n.easwaranand@gmail.com</a></p>
-<p><strong>Phone:</strong> 505-573-4309</p>
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="site-name">
+        EASWAR ANAND NARAYANAN
+      </a>
+
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="education.html">Education</a>
+        <a href="awards.html">Awards</a>
+
+        <a
+          href="Easwar_Narayanan_CV_2024_Sept_2024.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CV
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+
+          <div class="eyebrow">
+            Particle Physics · Detector Technology · Academic Technology
+          </div>
+
+          <h1>
+            Exploring fundamental physics and the technologies that help us understand it.
+          </h1>
+
+          <p class="hero-description">
+            I am an experimental particle physicist working with the ATLAS
+            experiment at CERN. My work spans Higgs physics, silicon detector
+            development, data analysis, and emerging technologies in research
+            and higher education.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#work" class="button button-primary">
+              Explore my work
+            </a>
+
+            <a
+              href="Easwar_Narayanan_CV_2024_Sept_2024.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-secondary"
+            >
+              Download CV
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="profile-wrap">
+
+          <img
+            src="profile-pic.jpeg"
+            alt="Portrait of Easwar Anand Narayanan"
+            class="profile-pic"
+          >
+
+          <div class="profile-caption">
+            Experimental particle physicist · ATLAS Collaboration
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SELECTED WORK -->
+
+    <section class="section" id="work">
+      <div class="container">
+
+        <div class="section-heading">
+          <h2>Selected Work</h2>
+          <p>Research, technology, and education</p>
+        </div>
+
+        <div class="work-grid">
+
+          <article class="work-card">
+
+            <div class="work-number">01</div>
+
+            <h3>Higgs Physics</h3>
+
+            <p>
+              Searching for rare di-Higgs production with the ATLAS experiment
+              and studying some of the least explored interactions in the
+              Standard Model.
+            </p>
+
+          </article>
+
+
+          <article class="work-card">
+
+            <div class="work-number">02</div>
+
+            <h3>Silicon Detector R&amp;D</h3>
+
+            <p>
+              Developing and characterizing silicon detector technologies for
+              the High-Luminosity Large Hadron Collider and future particle
+              physics experiments.
+            </p>
+
+          </article>
+
+
+          <article class="work-card">
+
+            <div class="work-number">03</div>
+
+            <h3>AI &amp; Academic Technology</h3>
+
+            <p>
+              Exploring how emerging technologies, including generative AI,
+              can support research, teaching, learning, and academic work.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+
+        <div>
+
+          <h2 class="about-title">
+            From particle collisions to the technologies shaping academic work.
+          </h2>
+
+        </div>
+
+
+        <div class="about-copy">
+
+          <p>
+            I am an experimental particle physicist currently based at Southern
+            Methodist University in Dallas and working with the ATLAS
+            experiment at the Large Hadron Collider at CERN.
+          </p>
+
+          <p>
+            My current physics research includes searches for rare di-Higgs
+            production and research and development for future generations of
+            ATLAS silicon detectors.
+          </p>
+
+          <p>
+            I received my PhD in Physics from the University of New Mexico in
+            2024 under the supervision of Prof. Sally Seidel. My doctoral work
+            included measurements involving B mesons and the development and
+            characterization of silicon sensors for particle detectors.
+          </p>
+
+          <p>
+            My broader professional interests include academic technology,
+            artificial intelligence in higher education, scientific
+            communication, and the ways emerging computational tools influence
+            research and teaching.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROFESSIONAL LINKS -->
+
+    <section class="section">
+      <div class="container">
+
+        <div class="section-heading">
+          <h2>Elsewhere</h2>
+          <p>Research profiles and professional links</p>
+        </div>
+
+        <div class="link-grid">
+
+          <a
+            class="external-link"
+            href="https://inspirehep.net/authors/2086334/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            InspireHEP ↗
+          </a>
+
+          <a
+            class="external-link"
+            href="https://www.linkedin.com/in/easwar-anand-narayanan-9a1a9624b"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            class="external-link"
+            href="https://github.com/eanarayan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            class="external-link"
+            href="Easwar_Narayanan_CV_2024_Sept_2024.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Curriculum Vitae ↗
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <div>
+
+          <h2 class="contact-title">
+            Get in touch.
+          </h2>
+
+        </div>
+
+
+        <div class="contact-details">
+
+          <p>
+            <strong>SMU</strong><br>
+            <a href="mailto:enarayanan@smu.edu">
+              enarayanan@smu.edu
+            </a>
+          </p>
+
+          <p>
+            <strong>Personal</strong><br>
+            <a href="mailto:n.easwaranand@gmail.com">
+              n.easwaranand@gmail.com
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <div class="container">
+
+      © 2026 Easwar Anand Narayanan
+
+    </div>
+  </footer>
+
 </body>
+
 </html>
