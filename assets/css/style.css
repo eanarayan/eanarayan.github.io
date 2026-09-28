@@ -345,3 +345,141 @@ footer {
     padding: 3.5rem 0;
   }
 }
+/* INNER PAGES */
+
+.page-hero {
+  padding: 5rem 0 3rem;
+}
+
+.page-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  margin: 0 0 1.5rem;
+}
+
+.page-intro {
+  max-width: 720px;
+  font-size: 1.08rem;
+  color: var(--muted);
+}
+
+/* TIMELINE */
+
+.timeline {
+  border-top: 1px solid var(--border);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 3rem;
+  padding: 2.2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-date {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.timeline-content h2,
+.timeline-content h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+}
+
+.timeline-content h2 {
+  font-size: 1.6rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.35rem;
+}
+
+.timeline-content p {
+  color: var(--muted);
+  margin: 0.35rem 0;
+}
+
+.timeline-meta {
+  font-size: 0.92rem;
+}
+
+/* AWARDS */
+
+.award-list {
+  border-top: 1px solid var(--border);
+}
+
+.award-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.award-year {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.award-item h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 0 0 0.35rem;
+}
+
+.award-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* TALKS */
+
+.talk-list {
+  border-top: 1px solid var(--border);
+}
+
+.talk-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.talk-year {
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.talk-item h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin: 0.4rem 0;
+}
+
+.talk-item p {
+  color: var(--muted);
+  margin: 0.2rem 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .timeline-item,
+  .award-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .page-hero {
+    padding-top: 3rem;
+  }
+}
