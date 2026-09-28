@@ -7,17 +7,73 @@
 
   <meta
     name="description"
-    content="Education and academic background of Easwar Anand Narayanan."
+    content="Education of Easwar Anand Narayanan."
   >
 
   <title>Education | Easwar Anand Narayanan</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .compact-page {
+      padding: 3.5rem 0 5rem;
+    }
+
+    .compact-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 500;
+      letter-spacing: -0.035em;
+      margin: 0 0 2.5rem;
+    }
+
+    .education-list {
+      border-top: 1px solid var(--text);
+    }
+
+    .education-entry {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 2.5rem;
+      padding: 1.8rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .education-year {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .education-entry h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin: 0 0 0.25rem;
+    }
+
+    .institution {
+      margin: 0 0 0.8rem;
+      color: var(--text);
+    }
+
+    .education-detail {
+      margin: 0.25rem 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 650px) {
+      .education-entry {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+      }
+    }
+  </style>
 </head>
+
 
 <body>
 
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
 
@@ -26,14 +82,14 @@
       </a>
 
       <nav class="site-nav">
-        <a href="index.html#about">About</a>
-        <a href="index.html#work">Work</a>
+        <a href="index.html">About</a>
+        <a href="work.html">Work</a>
         <a href="education.html">Education</a>
         <a href="awards.html">Awards</a>
         <a href="conferences.html">Talks</a>
 
         <a
-          href="Easwar_Narayanan_CV_2024_Sept_2024.pdf"
+          href="Easwar_Narayanan_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -45,212 +101,116 @@
   </header>
 
 
-  <main>
+  <main class="compact-page">
 
-    <!-- PAGE INTRO -->
-    <section class="page-hero">
-      <div class="container">
+    <div class="container">
 
-        <div class="eyebrow">
-          Academic Background
-        </div>
-
-        <h1 class="page-title">
-          Education
-        </h1>
-
-        <p class="page-intro">
-          My academic training spans experimental particle physics,
-          flavor physics, detector development, and high-energy physics
-          instrumentation.
-        </p>
-
-      </div>
-    </section>
+      <h1 class="compact-title">
+        Education
+      </h1>
 
 
-    <!-- EDUCATION TIMELINE -->
-    <section class="section">
-      <div class="container">
+      <div class="education-list">
 
-        <div class="timeline">
+        <!-- PhD -->
 
-          <!-- PhD -->
-          <article class="timeline-item">
+        <article class="education-entry">
 
-            <div class="timeline-date">
-              2020 — 2024
-            </div>
+          <div class="education-year">
+            2020 — 2024
+          </div>
 
-            <div class="timeline-content">
+          <div>
 
-              <h2>
-                Ph.D. in Physics
-              </h2>
+            <h2>
+              Ph.D. in Physics
+            </h2>
 
-              <p>
-                <strong>University of New Mexico</strong><br>
-                Albuquerque, New Mexico, USA
-              </p>
+            <p class="institution">
+              University of New Mexico
+            </p>
 
-              <p class="timeline-meta">
-                <strong>January 2020 — May 2024</strong>
-              </p>
+            <p class="education-detail">
+              <strong>Thesis:</strong>
+              A Precise Measurement of the Lifetime of
+              B<sup>0</sup><sub>d</sub>-mesons, Measurement of
+              CP-violation Parameters of
+              B<sup>0</sup><sub>s</sub>-mesons, the ATLAS Experiment
+              at the LHC, and Development of Silicon Detectors for
+              Future Particle Physics Experiments
+            </p>
 
-              <p class="timeline-meta">
-                <strong>Advisor:</strong>
-                Prof. Sally Seidel
-              </p>
+            <p class="education-detail">
+              <strong>Advisor:</strong> Prof. Sally Seidel
+            </p>
 
-              <p class="timeline-meta">
-                <strong>Dissertation:</strong><br>
-                <em>
-                  A Precise Measurement of the Lifetime of
-                  B<sup>0</sup><sub>d</sub>-mesons,
-                  Measurement of CP-violation Parameters of
-                  B<sup>0</sup><sub>s</sub>-mesons,
-                  the ATLAS Experiment at the LHC,
-                  and Development of Silicon Detectors for
-                  Future Particle Physics Experiments
-                </em>
-              </p>
+          </div>
 
-            </div>
-
-          </article>
+        </article>
 
 
-          <!-- Masters -->
-          <article class="timeline-item">
+        <!-- Masters -->
 
-            <div class="timeline-date">
-              2016 — 2018
-            </div>
+        <article class="education-entry">
 
-            <div class="timeline-content">
+          <div class="education-year">
+            2016 — 2018
+          </div>
 
-              <h2>
-                M.S. in Physics
-              </h2>
+          <div>
 
-              <p>
-                <strong>Indian Institute of Technology Madras</strong><br>
-                Chennai, India
-              </p>
+            <h2>
+              M.S. in Physics
+            </h2>
 
-              <p class="timeline-meta">
-                <strong>August 2016 — July 2018</strong>
-              </p>
+            <p class="institution">
+              Indian Institute of Technology Madras
+            </p>
 
-              <p class="timeline-meta">
-                <strong>Advisor:</strong>
-                Prof. James Libby
-              </p>
+            <p class="education-detail">
+              <strong>Thesis:</strong>
+              Sensitivity of Belle II experiment to the CP-violating
+              parameter gamma
+            </p>
 
-              <p class="timeline-meta">
-                <strong>Thesis:</strong><br>
-                <em>
-                  Sensitivity of Belle II experiment to the
-                  CP-violating parameter gamma
-                </em>
-              </p>
+            <p class="education-detail">
+              <strong>Advisor:</strong> Prof. James Libby
+            </p>
 
-            </div>
+          </div>
 
-          </article>
+        </article>
 
 
-          <!-- Bachelors -->
-          <article class="timeline-item">
+        <!-- Bachelors -->
 
-            <div class="timeline-date">
-              2013 — 2016
-            </div>
+        <article class="education-entry">
 
-            <div class="timeline-content">
+          <div class="education-year">
+            2013 — 2016
+          </div>
 
-              <h2>
-                B.S. with Honors in Physics
-              </h2>
+          <div>
 
-              <p>
-                <strong>St. Stephen's College</strong><br>
-                University of Delhi<br>
-                Delhi, India
-              </p>
+            <h2>
+              B.S. with Honors in Physics
+            </h2>
 
-              <p class="timeline-meta">
-                <strong>August 2013 — May 2016</strong>
-              </p>
+            <p class="institution">
+              St. Stephen's College, University of Delhi
+            </p>
 
-            </div>
+          </div>
 
-          </article>
-
-        </div>
+        </article>
 
       </div>
-    </section>
 
-
-    <!-- NEXT SECTION -->
-    <section class="section">
-      <div class="container">
-
-        <div class="section-heading">
-
-          <h2>
-            Continue exploring
-          </h2>
-
-          <p>
-            Research, talks, and recognition
-          </p>
-
-        </div>
-
-
-        <div class="link-grid">
-
-          <a
-            class="external-link"
-            href="index.html#work"
-          >
-            Research & Work →
-          </a>
-
-          <a
-            class="external-link"
-            href="conferences.html"
-          >
-            Conferences & Talks →
-          </a>
-
-          <a
-            class="external-link"
-            href="awards.html"
-          >
-            Awards & Honors →
-          </a>
-
-          <a
-            class="external-link"
-            href="Easwar_Narayanan_CV_2024_Sept_2024.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Curriculum Vitae ↗
-          </a>
-
-        </div>
-
-      </div>
-    </section>
+    </div>
 
   </main>
 
 
-  <!-- FOOTER -->
   <footer>
     <div class="container">
       © 2026 Easwar Anand Narayanan
