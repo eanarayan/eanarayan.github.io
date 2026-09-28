@@ -7,13 +7,67 @@
 
   <meta
     name="description"
-    content="Conference presentations and invited talks by Easwar Anand Narayanan."
+    content="Selected conferences and talks by Easwar Anand Narayanan."
   >
 
-  <title>Conferences & Talks | Easwar Anand Narayanan</title>
+  <title>Talks | Easwar Anand Narayanan</title>
 
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .compact-page {
+      padding: 3.5rem 0 5rem;
+    }
+
+    .compact-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      font-weight: 500;
+      letter-spacing: -0.035em;
+      margin: 0 0 2.5rem;
+    }
+
+    .compact-list {
+      border-top: 1px solid var(--text);
+    }
+
+    .talk-row {
+      display: grid;
+      grid-template-columns: 90px minmax(0, 1.5fr) minmax(180px, 0.7fr);
+      gap: 2rem;
+      align-items: start;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .talk-row .year {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .talk-row h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.15rem;
+      line-height: 1.4;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .talk-place {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    @media (max-width: 750px) {
+      .talk-row {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+      }
+    }
+  </style>
 </head>
+
 
 <body>
 
@@ -25,12 +79,17 @@
       </a>
 
       <nav class="site-nav">
-        <a href="index.html#about">About</a>
-        <a href="index.html#work">Work</a>
+        <a href="index.html">About</a>
+        <a href="work.html">Work</a>
         <a href="education.html">Education</a>
         <a href="awards.html">Awards</a>
         <a href="conferences.html">Talks</a>
-        <a href="Easwar_Narayanan_CV_2024_Sept_2024.pdf" target="_blank">
+
+        <a
+          href="Easwar_Narayanan_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           CV
         </a>
       </nav>
@@ -39,201 +98,176 @@
   </header>
 
 
-  <main>
+  <main class="compact-page">
 
-    <section class="page-hero">
-      <div class="container">
+    <div class="container">
 
-        <div class="eyebrow">
-          Scientific Communication
-        </div>
+      <h1 class="compact-title">
+        Conferences & Talks
+      </h1>
 
-        <h1 class="page-title">
-          Conferences & Talks
-        </h1>
 
-        <p class="page-intro">
-          Selected conference presentations, invited talks, and seminars
-          spanning B physics, CP violation, detector instrumentation,
-          radiation damage, and LHC physics.
-        </p>
+      <div class="compact-list">
+
+
+        <article class="talk-row">
+
+          <div class="year">
+            2025
+          </div>
+
+          <h2>
+            B-Physics Results from ATLAS and CMS
+          </h2>
+
+          <p class="talk-place">
+            Rencontres de Moriond 2025 — QCD and High Energy Interactions<br>
+            La Thuile, Italy
+          </p>
+
+        </article>
+
+
+        <article class="talk-row">
+
+          <div class="year">
+            2023
+          </div>
+
+          <h2>
+            Radiation Damage Effects in ATLAS Pixel Detector Monte Carlo
+            Simulations: Status and Perspectives
+          </h2>
+
+          <p class="talk-place">
+            TIPP 2023<br>
+            Cape Town, South Africa
+          </p>
+
+        </article>
+
+
+        <article class="talk-row">
+
+          <div class="year">
+            2022
+          </div>
+
+          <h2>
+            Measurement of the CP-violating phase
+            φ<sub>s</sub> in
+            B<sup>0</sup><sub>s</sub> → J/ψφ decays
+            in ATLAS/LHC at 13 TeV
+          </h2>
+
+          <p class="talk-place">
+            LHCC Meeting<br>
+            Geneva, Switzerland
+          </p>
+
+        </article>
+
+
+        <article class="talk-row">
+
+          <div class="year">
+            2022
+          </div>
+
+          <h2>
+            Mixing and CP-Violation at the LHC
+          </h2>
+
+          <p class="talk-place">
+            Vietnam Flavour Physics Conference<br>
+            Quy Nhon, Vietnam
+          </p>
+
+        </article>
+
+
+        <article class="talk-row">
+
+          <div class="year">
+            2022
+          </div>
+
+          <h2>
+            Measurement of the CP-violating phase
+            φ<sub>s</sub> in
+            B<sup>0</sup><sub>s</sub> → J/ψφ decays
+            in ATLAS/LHC at 13 TeV
+          </h2>
+
+          <p class="talk-place">
+            APS April Meeting<br>
+            New York City, USA
+          </p>
+
+        </article>
+
+
+        <article class="talk-row">
+
+          <div class="year">
+            2021
+          </div>
+
+          <h2>
+            Measurement of the CP-violating phase
+            φ<sub>s</sub> in
+            B<sup>0</sup><sub>s</sub> → J/ψφ decays
+            in ATLAS/LHC at 13 TeV
+          </h2>
+
+          <p class="talk-place">
+            Division of Particles and Fields,
+            American Physical Society
+          </p>
+
+        </article>
+
+
+        <article class="talk-row">
+
+          <div class="year">
+            2021
+          </div>
+
+          <h2>
+            New Techniques for Finding New Physics at the LHC
+          </h2>
+
+          <p class="talk-place">
+            University of New Mexico Seminar
+          </p>
+
+        </article>
+
+
+        <article class="talk-row">
+
+          <div class="year">
+            2020
+          </div>
+
+          <h2>
+            Measurement of the CP-violating phase
+            φ<sub>s</sub> in
+            B<sup>0</sup><sub>s</sub> → J/ψφ decays
+            in ATLAS/LHC at 13 TeV
+          </h2>
+
+          <p class="talk-place">
+            APS Four Corners Section Annual Meeting
+          </p>
+
+        </article>
+
 
       </div>
-    </section>
 
-
-    <section class="section">
-      <div class="container">
-
-        <div class="talk-list">
-
-
-          <article class="talk-item">
-
-            <div class="talk-year">
-              April 2025
-            </div>
-
-            <h2>
-              B-Physics Results from ATLAS and CMS
-            </h2>
-
-            <p>
-              Rencontres de Moriond 2025 — QCD and High Energy Interactions
-            </p>
-
-            <p>
-              La Thuile, Italy
-            </p>
-
-          </article>
-
-
-          <article class="talk-item">
-
-            <div class="talk-year">
-              September 2023
-            </div>
-
-            <h2>
-              Radiation Damage Effects in ATLAS Pixel Detector Monte Carlo
-              Simulations: Status and Perspectives
-            </h2>
-
-            <p>
-              Technology and Instrumentation in Particle Physics (TIPP) 2023
-            </p>
-
-            <p>
-              Cape Town, South Africa
-            </p>
-
-          </article>
-
-
-          <article class="talk-item">
-
-            <div class="talk-year">
-              November 2022
-            </div>
-
-            <h2>
-              Measurement of the CP-violating phase φ<sub>s</sub> in
-              B<sup>0</sup><sub>s</sub> → J/ψφ decays in ATLAS/LHC at 13 TeV
-            </h2>
-
-            <p>
-              LHCC Meeting
-            </p>
-
-            <p>
-              Geneva, Switzerland
-            </p>
-
-          </article>
-
-
-          <article class="talk-item">
-
-            <div class="talk-year">
-              August 2022
-            </div>
-
-            <h2>
-              Mixing and CP-Violation at the LHC
-            </h2>
-
-            <p>
-              Vietnam Flavour Physics Conference
-            </p>
-
-            <p>
-              Quy Nhon, Vietnam
-            </p>
-
-          </article>
-
-
-          <article class="talk-item">
-
-            <div class="talk-year">
-              April 2022
-            </div>
-
-            <h2>
-              Measurement of the CP-violating phase φ<sub>s</sub> in
-              B<sup>0</sup><sub>s</sub> → J/ψφ decays in ATLAS/LHC at 13 TeV
-            </h2>
-
-            <p>
-              APS April Meeting
-            </p>
-
-            <p>
-              New York City, USA
-            </p>
-
-          </article>
-
-
-          <article class="talk-item">
-
-            <div class="talk-year">
-              July 2021
-            </div>
-
-            <h2>
-              Measurement of the CP-violating phase φ<sub>s</sub> in
-              B<sup>0</sup><sub>s</sub> → J/ψφ decays in ATLAS/LHC at 13 TeV
-            </h2>
-
-            <p>
-              Meeting of the Division of Particles and Fields of the
-              American Physical Society
-            </p>
-
-          </article>
-
-
-          <article class="talk-item">
-
-            <div class="talk-year">
-              April 2021
-            </div>
-
-            <h2>
-              New Techniques for Finding New Physics at the LHC
-            </h2>
-
-            <p>
-              University of New Mexico Seminar
-            </p>
-
-          </article>
-
-
-          <article class="talk-item">
-
-            <div class="talk-year">
-              October 2020
-            </div>
-
-            <h2>
-              Measurement of the CP-violating phase φ<sub>s</sub> in
-              B<sup>0</sup><sub>s</sub> → J/ψφ decays in ATLAS/LHC at 13 TeV
-            </h2>
-
-            <p>
-              APS Four Corners Section Annual Meeting
-            </p>
-
-          </article>
-
-
-        </div>
-
-      </div>
-    </section>
+    </div>
 
   </main>
 
@@ -245,4 +279,5 @@
   </footer>
 
 </body>
+
 </html>
