@@ -22,7 +22,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 a {
@@ -34,7 +34,10 @@ a {
   margin: 0 auto;
 }
 
-/* HEADER */
+
+/* ========================================
+   HEADER
+======================================== */
 
 .site-header {
   border-bottom: 1px solid var(--border);
@@ -55,13 +58,14 @@ a {
 .site-name {
   text-decoration: none;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 1.4rem;
   flex-wrap: wrap;
 }
@@ -76,17 +80,17 @@ a {
   color: var(--text);
 }
 
-/* HERO */
+
+/* ========================================
+   LANDING / HERO
+======================================== */
 
 .hero {
   padding: 6rem 0 5rem;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.7fr);
-  gap: 5rem;
-  align-items: center;
+.hero-simple {
+  max-width: 950px;
 }
 
 .eyebrow {
@@ -100,25 +104,121 @@ a {
 
 .hero h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.8rem, 6vw, 5.4rem);
-  line-height: 0.98;
+  font-size: clamp(3rem, 6.5vw, 5.8rem);
+  line-height: 1.02;
   font-weight: 500;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.045em;
   margin: 0 0 2rem;
-  max-width: 850px;
+  max-width: 1000px;
 }
 
 .hero-description {
   font-size: 1.08rem;
   color: var(--muted);
-  max-width: 680px;
+  max-width: 720px;
+  margin: 0;
+}
+
+
+/* ========================================
+   GENERAL SECTIONS
+======================================== */
+
+.section {
+  padding: 5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 2.7rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.section-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about-profile-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+  gap: 5rem;
+  align-items: start;
+}
+
+.about-heading {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  margin: 0 0 2.3rem;
+}
+
+.about-profile-copy {
+  max-width: 740px;
+}
+
+.about-profile-copy p {
+  color: var(--muted);
+  font-size: 1.03rem;
+  margin: 0 0 1.4rem;
+}
+
+.about-profile-copy .about-lead {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  font-size: 1.55rem;
+  line-height: 1.45;
   margin-bottom: 2rem;
 }
+
+.about-profile-image {
+  max-width: 360px;
+  margin-left: auto;
+}
+
+.about-profile-image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.image-caption {
+  margin-top: 0.8rem;
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   BUTTONS / LINKS
+======================================== */
 
 .hero-actions {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .button {
@@ -143,108 +243,23 @@ a {
   background: var(--accent-soft);
 }
 
-.profile-wrap {
-  max-width: 330px;
-  margin-left: auto;
+.text-link {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 0.5rem;
 }
 
-.profile-pic {
-  width: 100%;
-  display: block;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 4px;
+.text-link:hover {
+  text-decoration: underline;
 }
 
-.profile-caption {
-  margin-top: 1rem;
-  color: var(--muted);
-  font-size: 0.86rem;
-  font-style: italic;
-}
 
-/* GENERAL SECTIONS */
-
-.section {
-  padding: 5rem 0;
-  border-top: 1px solid var(--border);
-}
-
-.section-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-  margin-bottom: 2.6rem;
-}
-
-.section-heading h2 {
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.section-heading p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-/* WORK */
-
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.work-card {
-  border-top: 1px solid var(--text);
-  padding-top: 1.4rem;
-}
-
-.work-number {
-  color: var(--muted);
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 2rem;
-}
-
-.work-card h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  font-weight: 500;
-  margin-bottom: 0.8rem;
-}
-
-.work-card p {
-  color: var(--muted);
-  font-size: 0.96rem;
-}
-
-/* ABOUT */
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 4rem;
-}
-
-.about-title {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.4rem;
-  line-height: 1.15;
-  margin: 0;
-  font-weight: 500;
-}
-
-.about-copy p {
-  margin-top: 0;
-  color: var(--muted);
-}
-
-/* LINKS */
+/* ========================================
+   LINK GRID
+======================================== */
 
 .link-grid {
   display: grid;
@@ -265,90 +280,13 @@ a {
   border-color: var(--text);
 }
 
-/* CONTACT */
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-.contact-title {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 2.4rem;
-  margin: 0;
-  font-weight: 500;
-}
-
-.contact-details p {
-  margin: 0 0 0.8rem;
-  color: var(--muted);
-}
-
-/* FOOTER */
-
-footer {
-  padding: 2rem 0 3rem;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 0.86rem;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 850px) {
-  .header-inner {
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 1.2rem 0;
-  }
-
-  .hero {
-    padding-top: 3.5rem;
-  }
-
-  .hero-grid,
-  .about-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .profile-wrap {
-    max-width: 280px;
-    margin: 0;
-  }
-
-  .work-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .link-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 520px) {
-  .site-nav {
-    gap: 0.75rem 1rem;
-  }
-
-  .hero h1 {
-    font-size: 2.8rem;
-  }
-
-  .link-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .section {
-    padding: 3.5rem 0;
-  }
-}
-/* INNER PAGES */
+/* ========================================
+   INNER PAGE HERO
+======================================== */
 
 .page-hero {
-  padding: 5rem 0 3rem;
+  padding: 5rem 0 3.5rem;
 }
 
 .page-title {
@@ -366,187 +304,6 @@ footer {
   color: var(--muted);
 }
 
-/* TIMELINE */
-
-.timeline {
-  border-top: 1px solid var(--border);
-}
-
-.timeline-item {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 3rem;
-  padding: 2.2rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.timeline-date {
-  color: var(--muted);
-  font-size: 0.88rem;
-}
-
-.timeline-content h2,
-.timeline-content h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
-  margin: 0 0 0.4rem;
-}
-
-.timeline-content h2 {
-  font-size: 1.6rem;
-}
-
-.timeline-content h3 {
-  font-size: 1.35rem;
-}
-
-.timeline-content p {
-  color: var(--muted);
-  margin: 0.35rem 0;
-}
-
-.timeline-meta {
-  font-size: 0.92rem;
-}
-
-/* AWARDS */
-
-.award-list {
-  border-top: 1px solid var(--border);
-}
-
-.award-item {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 2rem;
-  padding: 1.6rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.award-year {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.award-item h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
-  font-weight: 500;
-  margin: 0 0 0.35rem;
-}
-
-.award-item p {
-  margin: 0;
-  color: var(--muted);
-}
-
-/* TALKS */
-
-.talk-list {
-  border-top: 1px solid var(--border);
-}
-
-.talk-item {
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.talk-year {
-  color: var(--muted);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.talk-item h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  font-weight: 500;
-  margin: 0.4rem 0;
-}
-
-.talk-item p {
-  color: var(--muted);
-  margin: 0.2rem 0;
-}
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-  .timeline-item,
-  .award-item {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
-
-  .page-hero {
-    padding-top: 3rem;
-  }
-}
-/* ========================================
-   ABOUT PAGE
-======================================== */
-
-.about-profile-grid {
-  display: grid;
-  grid-template-columns: minmax(260px, 0.65fr) minmax(0, 1.35fr);
-  gap: 5rem;
-  align-items: start;
-}
-
-.about-profile-image img {
-  width: 100%;
-  display: block;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-.about-profile-copy {
-  max-width: 720px;
-}
-
-.about-profile-copy p {
-  color: var(--muted);
-  font-size: 1.03rem;
-  margin: 0 0 1.4rem;
-}
-
-.about-profile-copy .about-lead {
-  font-family: Georgia, "Times New Roman", serif;
-  color: var(--text);
-  font-size: 1.55rem;
-  line-height: 1.45;
-  margin-bottom: 2rem;
-}
-
-.about-actions {
-  margin-top: 2rem;
-}
-
-.about-highlight-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.about-highlight {
-  border-top: 1px solid var(--text);
-  padding-top: 1.3rem;
-}
-
-.about-highlight h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
-  font-weight: 500;
-  margin: 0 0 0.8rem;
-}
-
-.about-highlight p {
-  color: var(--muted);
-  font-size: 0.94rem;
-}
-
 
 /* ========================================
    WORK PAGE
@@ -562,17 +319,24 @@ footer {
   gap: 5rem;
 }
 
+.work-number {
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
 .work-feature-title {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.025em;
-  margin: 1rem 0 0;
+  margin: 0;
 }
 
 .work-title-wide {
-  max-width: 850px;
+  max-width: 900px;
   margin-bottom: 3rem;
 }
 
@@ -586,19 +350,6 @@ footer {
   margin: 0 0 1.35rem;
 }
 
-.text-link {
-  display: inline-block;
-  color: var(--accent);
-  font-size: 0.92rem;
-  font-weight: 600;
-  text-decoration: none;
-  margin-top: 0.5rem;
-}
-
-.text-link:hover {
-  text-decoration: underline;
-}
-
 .work-links {
   display: flex;
   flex-wrap: wrap;
@@ -607,7 +358,9 @@ footer {
 }
 
 
-/* GBCR FEATURE */
+/* ========================================
+   GBCR PHOTO
+======================================== */
 
 .gbcr-layout {
   display: grid;
@@ -638,24 +391,210 @@ footer {
 
 
 /* ========================================
+   CONTACT
+======================================== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.contact-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.4rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.contact-details p {
+  margin: 0 0 0.8rem;
+  color: var(--muted);
+}
+
+
+/* ========================================
+   EDUCATION / TIMELINES
+======================================== */
+
+.timeline {
+  border-top: 1px solid var(--border);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 3rem;
+  padding: 2.2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-date {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.timeline-content h2,
+.timeline-content h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+}
+
+.timeline-content h2 {
+  font-size: 1.6rem;
+}
+
+.timeline-content p {
+  color: var(--muted);
+  margin: 0.35rem 0;
+}
+
+.timeline-meta {
+  font-size: 0.92rem;
+}
+
+
+/* ========================================
+   AWARDS
+======================================== */
+
+.award-list {
+  border-top: 1px solid var(--border);
+}
+
+.award-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.award-year {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.award-item h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 0 0 0.35rem;
+}
+
+.award-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+
+/* ========================================
+   TALKS
+======================================== */
+
+.talk-list {
+  border-top: 1px solid var(--border);
+}
+
+.talk-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.talk-year {
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.talk-item h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin: 0.4rem 0;
+}
+
+.talk-item p {
+  color: var(--muted);
+  margin: 0.2rem 0;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+  padding: 2rem 0 3rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+
+/* ========================================
    RESPONSIVE
 ======================================== */
 
 @media (max-width: 850px) {
 
+  .header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.2rem 0;
+  }
+
+  .hero {
+    padding: 4rem 0;
+  }
+
   .about-profile-grid,
   .work-feature-grid,
-  .gbcr-layout {
+  .gbcr-layout,
+  .contact-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 
   .about-profile-image {
-    max-width: 330px;
+    max-width: 300px;
+    margin-left: 0;
   }
 
-  .about-highlight-grid {
+  .link-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .timeline-item,
+  .award-item {
     grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .site-nav {
+    gap: 0.75rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.9rem;
+  }
+
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 3.5rem 0;
   }
 
 }
